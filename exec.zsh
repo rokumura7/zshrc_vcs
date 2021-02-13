@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 rm ~/.zshrc
-cp ./zshrc.sh ~/.zshrc
+cp ./zshrc.zsh ~/.zshrc
 source ~/.zshrc
 
 echo "DONE"
