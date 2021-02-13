@@ -1,6 +1,4 @@
-#!/bin/bash
-
-echo "START"
+#!/bin/zsh
 
 rm ~/.zshrc
 cp ./zshrc.sh ~/.zshrc
