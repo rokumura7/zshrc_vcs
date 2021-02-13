@@ -1,4 +1,4 @@
-function rprompt-git-current-branch {
+function rprompt_git_current_branch {
   local branch_name
   branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
   if [ -n "$branch_name" ]; then
@@ -6,7 +6,7 @@ function rprompt-git-current-branch {
   fi
 }
 
-function prompt-working-time {
+function prompt_working_time {
   local now
   now=$(date '+%H')
   if [ $now -eq 14 ]; then
@@ -20,8 +20,8 @@ function prompt-working-time {
 
 setopt prompt_subst
 RPROMPT='%F{99}%D{%H:%M:%S}%f'
-PROMPT='%F{33}%~%f `rprompt-git-current-branch`
- `prompt-working-time`  ▶  '
+PROMPT='%F{33}%~%f `rprompt_git_current_branch`
+ `prompt_working_time`  ▶  '
 
 
 ##### ALIAS #####
