@@ -23,6 +23,11 @@ RPROMPT='%F{99}%D{%H:%M:%S}%f'
 PROMPT='%F{33}%~%f `rprompt_git_current_branch`
  `prompt_working_time`  ▶  '
 
+##### PYTHON #####
+eval "$(pyenv init -)"
+
+##### GitHub CLI #####
+eval "$(gh completion -s zsh)"
 
 ##### ALIAS #####
 ## ls
