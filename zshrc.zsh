@@ -1,3 +1,7 @@
+#!/bin/zsh
+
+export PATH=/opt/homebrew/bin:$PATH
+
 function rprompt_git_current_branch {
   local branch_name
   branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
@@ -24,10 +28,10 @@ PROMPT='%F{33}%~%f `rprompt_git_current_branch`
  `prompt_working_time`  ▶  '
 
 ##### PYTHON #####
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 ##### GitHub CLI #####
-eval "$(gh completion -s zsh)"
+# eval "$(gh completion -s zsh)"
 
 ##### ALIAS #####
 ## ls
