@@ -27,7 +27,7 @@ function prompt_working_time {
 function rprompt_awsprof_precmd {
   profile="${AWS_PROFILE}"
   if [[ -n "${profile}" ]]; then
-    echo "/ AWS PROFILE: %B%F{00}%K{38}${profile}%k%f%b"
+    echo "/ AWS PROFILE: %B%F{15}%K{38}${profile}%k%f%b"
   fi
 }
 
